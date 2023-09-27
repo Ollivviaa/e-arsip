@@ -1,0 +1,150 @@
+:root{
+    --navbar : #352f44;
+    --bg : #faf0e6;
+    --font1 : #5c5470;
+    --hover : #b9b4c7;
+    --judul : #364f6b;
+}
+
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    position: fixed;
+    background-color: var(--navbar);
+    color: var(--bg);
+}
+
+.logo a {
+    font-size: 40px;
+    font-weight: 1000;
+    float: left;
+    padding-left: 2rem;
+    font-family: 'Archivo Black', sans-serif;
+    color: var(--bg);
+}
+
+.navbar {
+    float: right;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky; 
+    top: 0;
+    background: var(--navbar);
+    z-index: 1;
+    border-bottom:1px solid var(--bg);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: var(--bg);
+    font-weight: 200;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+nav ul li a:hover {
+    color: var(--hover);
+}
+
+nav ul li a::after{
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--hover);
+    transform: scaleX(0);
+}
+
+nav ul li a:hover::after{
+    transform: scaleX(0.5);
+    transition: 0.2 linear;
+}
+
+/* home */
+#home {
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 5rem;
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+#home img{
+    width: 600px;
+    height: 600px;
+}
+
+.kolom {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    margin-top: 70px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: var(--judul);
+    text-align: justify;
+    margin-left: 50px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    color: var(--judul);
+    width: 100%;
+    line-height: 50px;
+}
+
+p {
+    margin-left: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+/* about */
+#about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("img/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.isiabt {
+
+}
