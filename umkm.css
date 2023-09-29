@@ -16,6 +16,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -112,7 +113,7 @@ nav ul li a:hover::after{
     font-size: 20px;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
-    color: var(--judul);
+    color:rgb(16, 19, 34)
     text-align: justify;
     margin-left: 50px;
 }
@@ -139,12 +140,33 @@ p {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url("img/home.jpg");
+    background-image: url("./photo_6095846134481272746_y.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
 }
 
-.isiabt {
+.content {
+    padding: 1.4rem;
+    max-width: 60rem;
+    -webkit-text-stroke: 0.1px;
+    -webkit-text-stroke-color: var(--white);
+}
 
+.content h1 {
+    font-size: 4rem;
+    margin-left: 100px;
+    margin-top: -3rem;
+    color: var(--font1);
+    margin-right: 300px;
+
+}
+
+.content p {
+    margin-right: 300px;
+    margin-left: 100px;
+    font-size: 110%;
+    text-align: justify;
+    color:rgb(16, 19, 34);
+    margin-top: 1rem;
 }
